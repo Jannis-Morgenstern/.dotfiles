@@ -1,0 +1,85 @@
+gui:
+  scrollHeight: 1
+  scrollPastBottom: false
+  sidePanelWidth: 0.3
+  expandFocusedSidePanel: true
+  mainPanelSplitMode: 'horizontal'
+  language: 'en'
+  timeFormat: '02 Jan 06 15:04 CET'
+  theme:
+    lightTheme: false
+    activeBorderColor:
+      - '#e5c07b'
+      - bold
+    inactiveBorderColor:
+      - '#363e49'
+    optionsTextColor:
+      - '#56b6c2'
+    selectedLineBgColor:
+      - default
+    selectedRangeBgColor:
+      - red
+    # cherryPickedCommitBgColor:
+    #   - default
+    # cherryPickedCommitFgColor:
+    #   - default
+    unstagedChangesColor:
+      - '#abb2bf'
+  commitLength:
+    show: true
+  mouseEvents: true
+  skipUnstageLineWarning: false
+  skipStashWarning: false
+  showFileTree: true
+  showListFooter: false
+  showRandomTip: false
+  showBottomLine: false
+  showCommandLog: false
+  showIcons: true
+  commandLogSide: 0
+  splitDiff: 'auto'
+
+git:
+  paging:
+    colorArg: always
+    useConfig: true
+  commit:
+    signOff: false
+  merging:
+    manualCommit: false
+    args: ''
+  log:
+    order: 'top-order'
+    showGraph: 'when-maximised'
+  # skipHookPrefix:
+  autoFetch: true
+  autoRefresh: true
+  # branchLogCmd:
+  # allBranchesLogCmd:
+  overrideGpg: false
+  parseEmoji: true
+  diffContextSize: 3
+
+os:
+  editCommand: ''
+  editCommandTemplate: ''
+  openCommand: ''
+
+refresher:
+  refreshInterval: 10
+  fetchInterval: 60
+
+update:
+  method: background
+  days: 7
+
+reporting: 'off'
+confirmQuit: false
+quitOnTopLevelReturn: false
+disableStartupPopops: true
+notARepository: 'prompt'
+promptToReturnFromSubprocess: true
+
+keybinding:
+  universal:
+    quit: 'q'
