@@ -8,3 +8,9 @@
     ~/.config/lazygit/config.yml: lazygit/config.yml
     ~/.config/kitty: kitty
     ~/.config/sxhkd: sxhkd
+
+- shell:
+  - command: pkill -USR1 -x sxhkd
+    description: reload hotkeys
+    stderr: true
+    quiet: true
