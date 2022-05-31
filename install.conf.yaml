@@ -7,3 +7,4 @@
 - link:
     ~/.config/lazygit/config.yml: lazygit/config.yml
     ~/.config/kitty: kitty
+    ~/.config/sxhkd: sxhkd
