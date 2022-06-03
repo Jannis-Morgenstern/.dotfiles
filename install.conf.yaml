@@ -13,6 +13,8 @@
       mode: 755
     ~/.bashrc: bash/.bashrc
     ~/.bash_profile: bash/.bash_profile
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fish_plugins: fish/fish_plugins
 
 - shell:
   - command: pkill -USR1 -x sxhkd
