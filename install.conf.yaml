@@ -8,6 +8,7 @@
     ~/.config/lazygit/config.yml: lazygit/config.yml
     ~/.config/kitty: kitty
     ~/.config/sxhkd: sxhkd
+    ~/.config/bspwm: bspwm
 
 - shell:
   - command: pkill -USR1 -x sxhkd
