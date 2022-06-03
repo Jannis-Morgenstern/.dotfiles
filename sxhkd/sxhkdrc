@@ -45,6 +45,11 @@ super + shift + s
   sh $HOME/scripts/screenshot.sh
 
 
+# Misc
+super + alt + Return
+  bspc query -T -n | xclip -selection c
+
+
 # bspwm
 ## { quit, restart } bspwm
 super + alt + {q,r}
