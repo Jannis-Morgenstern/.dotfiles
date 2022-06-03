@@ -11,6 +11,8 @@
     ~/.config/bspwm:
       path: bspwm
       mode: 755
+    ~/.bashrc: bash/.bashrc
+    ~/.bash_profile: bash/.bash_profile
 
 - shell:
   - command: pkill -USR1 -x sxhkd
