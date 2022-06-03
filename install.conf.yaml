@@ -8,7 +8,9 @@
     ~/.config/lazygit/config.yml: lazygit/config.yml
     ~/.config/kitty: kitty
     ~/.config/sxhkd: sxhkd
-    ~/.config/bspwm: bspwm
+    ~/.config/bspwm:
+      path: bspwm
+      mode: 755
 
 - shell:
   - command: pkill -USR1 -x sxhkd
