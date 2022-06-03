@@ -12,7 +12,9 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 
 bspc rule -a Screenkey manage=off
-bspc rule -a chromium-browser state=floating
-# bspc rule -a jetbrains-pycharm-ce state=floating
+
+# playwright browsers
+bspc rule -a firefox-default state=floating
+bspc rule -a Chromium-browser state=floating
 
 $HOME/.config/polybar/launch.sh
