@@ -18,9 +18,14 @@
     ~/.xinitrc: X/.xinitrc
     ~/.Xresources: X/.Xresources
     ~/.config/autokey/data: autokey
+    ~/.config/polybar/config.ini: polybar/config.ini
 
 - shell:
   - command: pkill -USR1 -x sxhkd
     description: reload hotkeys
     stderr: true
     quiet: true
+  - command: killall polybar && ~/.config/polybar/launch.sh
+    description: restart polybar
+    stderr: true
+    quit: true
