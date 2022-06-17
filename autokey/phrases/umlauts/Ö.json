@@ -1,0 +1,36 @@
+{
+    "type": "phrase",
+    "description": "\u00d6",
+    "modes": [
+        1,
+        3
+    ],
+    "usageCount": 1,
+    "prompt": false,
+    "omitTrigger": false,
+    "matchCase": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            "Oee"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>",
+            "<ctrl>",
+            "<shift>"
+        ],
+        "hotKey": "o"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    },
+    "sendMode": "<ctrl>+v"
+}
