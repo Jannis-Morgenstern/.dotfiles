@@ -16,5 +16,6 @@ bspc rule -a Screenkey manage=off
 # playwright browsers
 bspc rule -a firefox-default state=floating
 bspc rule -a Chromium-browser state=floating
+bspc rule -a neovide state=fullscreen
 
 "$HOME/.config/polybar/launch.sh"
