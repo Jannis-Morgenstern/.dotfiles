@@ -5,7 +5,7 @@ TERMINAL_ID=$(xdo id)
 
 xdo hide "${TERMINAL_ID}"
 
-"${COMMAND}" &
+eval "${COMMAND}" &
 
 sleep 1
 
