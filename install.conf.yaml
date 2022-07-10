@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.config/lazygit/config.yml: lazygit/config.yml
@@ -21,11 +21,11 @@
     ~/.config/polybar/config.ini: polybar/config.ini
 
 - shell:
-  - command: pkill -USR1 -x sxhkd
-    description: reload hotkeys
-    stderr: true
-    quiet: true
-  - command: killall polybar && ~/.config/polybar/launch.sh
-    description: restart polybar
-    stderr: true
-    quit: true
+    - command: pkill -USR1 -x sxhkd
+      description: reload hotkeys
+      stderr: true
+      quiet: true
+    - command: killall polybar ; ~/.config/polybar/launch.sh
+      description: restart polybar
+      stderr: true
+      quit: true
