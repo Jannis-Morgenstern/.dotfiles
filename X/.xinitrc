@@ -28,6 +28,16 @@ dbus-update-activation-environment --systemd DISPLAY
 eval "$(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)"
 export SSH_AUTH_SOCK
 export _JAVA_AWT_WM_NONREPARENTING=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export NEOVIDE_MULTIGRID=true
+
+# Brainix
+export DbPassword=BrainixDb2020
+export MongoDbPassword=BrainixMongoDb2020
+export RabbitMQ_Password=BrainixRabitMQ2020
+export TaskServicePath="$HOME/development/titanom/brainix/Task Service"
+export TrainingCenterServicePath="$HOME/development/titanom/brainix/training-center-service-v2"
+export nvm_default_version="14.13.1"
 
 xset r rate 200 25
 xsetroot -cursor_name left_ptr &
@@ -35,6 +45,7 @@ systemctl --user import-environment DISPLAY
 clipmenud &
 picom -f &
 numlockx on &
+# ~/.screenlayout/home_0.sh &&
 ~/.screenlayout/office_4.sh &&
   feh --bg-scale ~/Wallpapers/pixel_art.png &
 blueman-applet &
