@@ -28,4 +28,8 @@
     - command: killall polybar ; ~/.config/polybar/launch.sh
       description: restart polybar
       stderr: true
-      quit: true
+      quiet: true
+    - command: bspc wm -r
+      description: restart bspwm
+      stderr: true
+      quiet: true
