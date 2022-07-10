@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+COMMAND="$*"
+TERMINAL_ID=$(xdo id)
+
+xdo hide "${TERMINAL_ID}"
+
+"${COMMAND}" &
+
+sleep 1
+
+NEW_NODE_ID=$(bspc query -N -n focused)
+
+bspc subscribe node_remove | while read -r line ; do
+  REMOVED_NODE_ID=$(echo "${line}" | rev | cut -d" " -f1 | rev)
+
+  if [ "${REMOVED_NODE_ID}" = "${NEW_NODE_ID}" ]; then
+    xdo show "${TERMINAL_ID}"
+    exit 0
+  fi
+done
