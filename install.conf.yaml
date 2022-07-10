@@ -20,6 +20,12 @@
     ~/.config/autokey/data: autokey
     ~/.config/polybar/config.ini: polybar/config.ini
 
+- git:
+    "~/.config/bspwm/plugins/bspswallow":
+      url: https://github.com/JopStro/bspswallow
+      description: "bspwm: swallow plugin"
+      method: clone-or-pull
+
 - shell:
     - command: pkill -USR1 -x sxhkd
       description: reload hotkeys
