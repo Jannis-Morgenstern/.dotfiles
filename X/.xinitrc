@@ -37,7 +37,7 @@ export MongoDbPassword=BrainixMongoDb2020
 export RabbitMQ_Password=BrainixRabitMQ2020
 export TaskServicePath="$HOME/development/titanom/brainix/Task Service"
 export TrainingCenterServicePath="$HOME/development/titanom/brainix/training-center-service-v2"
-export nvm_default_version="14.13.1"
+export nvm_default_version="16.15.1"
 
 xset r rate 200 25
 xsetroot -cursor_name left_ptr &
