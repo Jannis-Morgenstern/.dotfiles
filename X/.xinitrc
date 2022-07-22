@@ -46,7 +46,7 @@ clipmenud &
 picom -f &
 numlockx on &
 # ~/.screenlayout/home_0.sh &&
-~/.screenlayout/office_4.sh &&
-  feh --bg-scale ~/Wallpapers/pixel_art.png &
+~/.screenlayout/office_2.sh;
+  feh --bg-scale ~/Wallpapers/cyberpunk-girl_4k_accent.jpg &
 blueman-applet &
 exec bspwm
