@@ -39,7 +39,10 @@ export TaskServicePath="$HOME/development/titanom/brainix/Task Service"
 export TrainingCenterServicePath="$HOME/development/titanom/brainix/training-center-service-v2"
 export nvm_default_version="16.15.1"
 
-xset r rate 200 25
+pipewire &
+pipewire-pulse &
+wireplumber &
+xset r rate 150 50
 xsetroot -cursor_name left_ptr &
 systemctl --user import-environment DISPLAY
 clipmenud &
