@@ -17,3 +17,7 @@ export PATH="$HOME/go/bin:$PATH"
 
 export PNPM_HOME="/home/jannis/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# fnm
+export PATH=/home/jannis/.fnm:$PATH
+eval "`fnm env`"
