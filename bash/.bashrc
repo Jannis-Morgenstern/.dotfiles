@@ -21,3 +21,4 @@ export PATH="$PNPM_HOME:$PATH"
 # fnm
 export PATH=/home/jannis/.fnm:$PATH
 eval "`fnm env`"
+. "$HOME/.cargo/env"
