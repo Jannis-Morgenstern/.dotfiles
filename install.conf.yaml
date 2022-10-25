@@ -23,6 +23,7 @@
       path: polybar
       mode: 755
     ~/.config/paru: paru
+    ~/.config/wezterm: wezterm
 
 - shell:
     - command: pkill -USR1 -x sxhkd
