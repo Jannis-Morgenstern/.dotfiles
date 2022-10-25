@@ -38,6 +38,7 @@ export RabbitMQ_Password=BrainixRabitMQ2020
 export TaskServicePath="$HOME/development/titanom/brainix/Task Service"
 export TrainingCenterServicePath="$HOME/development/titanom/brainix/training-center-service-v2"
 export nvm_default_version="16.15.1"
+export JAVA_HOME=/usr/lib/jvm/default
 
 pipewire &
 pipewire-pulse &
@@ -48,8 +49,11 @@ systemctl --user import-environment DISPLAY
 clipmenud &
 picom -f &
 numlockx on &
-# ~/.screenlayout/home_0.sh &&
-~/.screenlayout/office_2.sh;
-  feh --bg-scale ~/Wallpapers/cyberpunk-girl_4k_accent.jpg &
+brightnessctl --restore &
+# ~/.screenlayout/home.sh ;
+~/.screenlayout/focus.sh ;
+feh --bg-scale ~/Wallpapers/cyberpunk-girl_4k_accent.jpg &
 blueman-applet &
+picom -GCb &
 exec bspwm
+# exec dbus-launch bspwm
