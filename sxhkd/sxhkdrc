@@ -5,7 +5,7 @@ super + Escape
 
 # Programs
 super + Return
-  kitty ~
+  wezterm
 
 
 # Rofi
