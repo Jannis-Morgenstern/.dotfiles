@@ -2,5 +2,5 @@
 
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 
-exec startx
+# exec startx
 . "$HOME/.cargo/env"
