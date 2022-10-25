@@ -35,3 +35,5 @@ alias neovide="swallow neovide"
 
 set -gx PNPM_HOME "/home/jannis/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
+
+starship init fish | source
